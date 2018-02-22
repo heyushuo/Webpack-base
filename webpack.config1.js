@@ -39,17 +39,10 @@ module.exports = {
   			]
   		}
   		//2.这是第二种css-loader的写法
-  	/*	{
+  	{
   				test:/\.css$/,
   				loader:"style-loader!css-loader!postcss!less"
-  		}*/
-  		//3.这是第三种的写法webpack配置loader时是可以不写loader的后缀明-loader，因此css-loader可以写为css。
-  		//高版本的webpack已不再允许去掉后缀了
-  		/*{
-  			test:/\.css$/,
-				loader:"style!css"
-  		}*/
-  		
+  		}
   	]
   }
 }
