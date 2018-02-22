@@ -34,13 +34,14 @@ module.exports = {
   			use:[
   				{loader:"style-loader"},  //style-loader则将解析后的样式嵌入js代码   要把css-loader放到前边
   				{loader:"css-loader"},    //css-loader用于解析
-  				
+  				{loader:"postcss-loader"},
+  				{loader:"less-loader"}
   			]
   		}
   		//2.这是第二种css-loader的写法
   	/*	{
   				test:/\.css$/,
-  				loader:"style-loader!css-loader"
+  				loader:"style-loader!css-loader!postcss!less"
   		}*/
   		//3.这是第三种的写法webpack配置loader时是可以不写loader的后缀明-loader，因此css-loader可以写为css。
   		//高版本的webpack已不再允许去掉后缀了
