@@ -39,9 +39,9 @@ module.exports = {
   			]
   		}
   		//2.这是第二种css-loader的写法
-  	{
-  				test:/\.css$/,
-  				loader:"style-loader!css-loader!postcss!less"
+  		{
+				test:/\.css$/,
+				loader:"style-loader!css-loader!postcss-loader!less-loader"
   		}
   	]
   }
